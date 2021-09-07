@@ -1,0 +1,22 @@
+
+nav{
+    padding: 20px 0px;
+    
+    background-color: aliceblue;
+}
+.menuBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    
+}
+li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+.logo{
+    display: inline-block;
+}
