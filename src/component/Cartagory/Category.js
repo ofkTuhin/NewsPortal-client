@@ -6,8 +6,9 @@ import './category.css'
 const Category = () => {
     const [categoryNews,setCategoryNews]=useState([])
     const {category}=useParams()
+    
     useEffect(()=>{
-        fetch(`http://localhost:3000/category/${category}`)
+        fetch(`https://calm-escarpment-98508.herokuapp.com/${category}`)
         .then(res=>res.json())
         .then(data=>setCategoryNews(data))
     },[category]

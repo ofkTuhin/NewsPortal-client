@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
@@ -15,7 +16,7 @@ const AddTopNews = () => {
             image:imageUrl
         }
         console.log(data)
-    fetch('http://localhost:3000/topNews',{
+    fetch('https://calm-escarpment-98508.herokuapp.com/topNews',{
         method:'POST',
          headers:{'content-type':'application/json'},
          body:JSON.stringify(events)

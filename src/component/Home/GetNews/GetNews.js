@@ -1,15 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './news.css'
 
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
 
 const GetNews = () => {
+    const {login,category}=useContext(UserContext)
+    const [categoryNews,setCategory]=category
     const [news,setNews]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:3000/getNews')
+        fetch('https://calm-escarpment-98508.herokuapp.com/getNews')
         .then(res=>res.json())
         .then(data=>setNews(data))
+        console.log(news)
+        
+        
+    },[])
+    news.map(data=>{console.log(data)
+    setCategory(data)
     })
+    console.log(categoryNews)
+    
+ 
+    
     return (
         <div>
             <div className="row">

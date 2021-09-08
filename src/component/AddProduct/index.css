@@ -2,3 +2,13 @@
     width: 60%;
     margin: 20px auto;
   }
+  .adminPanel li{
+    display: block;
+    margin-top: 10px;
+    color: rgb(85, 47, 47);
+    border: 1px solid green;
+    background-color: rgb(128, 128, 128);
+    text-decoration: none;
+    width: 150px;
+
+  }

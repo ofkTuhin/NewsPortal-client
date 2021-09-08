@@ -6,7 +6,7 @@ const NewsDetails = () => {
     const [newsInfo,setNewsInfo]=useState([])
     const {_id}=useParams()
     useEffect(()=>{
-       fetch('http://localhost:3000/newsDetails/'+_id)
+       fetch('https://calm-escarpment-98508.herokuapp.com/'+_id)
        .then(res=>res.json())
        .then(data=>setNewsInfo(data))
     },[])

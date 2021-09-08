@@ -1,6 +1,8 @@
 import React from 'react';
 import AddProduct from '../../AddProduct/AddProduct';
+
 import TopNews from '../../TopNews/TopNews';
+
 import GetNews from '../GetNews/GetNews';
 
 const Home = () => {
@@ -10,11 +12,13 @@ const Home = () => {
          <div className="row">
              <div className="col-3">
                  <div className="topNews">
+                     
                      <h3>Top News</h3>
-                     <TopNews></TopNews>
+                    <TopNews></TopNews>
                  </div>
              </div>
              <div className="col-9">
+
                  <div className="news">
                      
                      <GetNews></GetNews>

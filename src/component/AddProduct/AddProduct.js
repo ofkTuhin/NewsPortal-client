@@ -15,7 +15,7 @@ const AddProduct = () => {
             image:imageUrl
         }
         console.log(data)
-    fetch('http://localhost:3000/addNews',{
+    fetch('https://calm-escarpment-98508.herokuapp.com/addNews',{
         method:'POST',
          headers:{'content-type':'application/json'},
          body:JSON.stringify(events)

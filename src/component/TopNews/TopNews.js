@@ -1,10 +1,21 @@
+// import React from 'react';
+
+// const TopNews = () => {
+//     return (
+//         <div>
+            
+//         </div>
+//     );
+// };
+
+// export default TopNews;
 import React, { useEffect, useState } from 'react';
 
 const TopNews = () => {
     const [topNews,setTopNews]=useState([])
     useEffect(()=>{
 
-        fetch('http://localhost:3000/getTopNews')
+        fetch('https://calm-escarpment-98508.herokuapp.com/getTopNews')
         .then(res=>res.json())
         .then(data=>setTopNews(data))
     },[])
